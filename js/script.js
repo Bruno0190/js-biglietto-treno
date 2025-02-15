@@ -10,10 +10,11 @@
 
 
 const km  = parseInt((prompt('Buongiorno, quanti km deve coprire?:')));
+console.log(km);
 
 const eta = parseInt((prompt('Pregasi specificare età:')));
 
-if (typeof(km) === "number" && typeof(eta) === "number") {
+if ( km != NaN && typeof(km) === "number" && eta != NaN && typeof(eta) === "number") {
 
     const initialPrice = km * 0.21;
     let sconto;
