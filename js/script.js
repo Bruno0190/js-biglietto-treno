@@ -14,7 +14,7 @@ console.log(km);
 
 const eta = parseInt((prompt('Pregasi specificare età:')));
 
-if ( km != NaN && typeof(km) === "number" && eta != NaN && typeof(eta) === "number") {
+if ( !isNaN(km) && !isNaN(eta) ) {
 
     const initialPrice = km * 0.21;
     let sconto;
@@ -32,6 +32,6 @@ if ( km != NaN && typeof(km) === "number" && eta != NaN && typeof(eta) === "numb
 
     alert('Grazie per la sua pazienza, il costo totale del biglietto è '+ priceFormaUmana);
 
-} else if (typeof(km) != "number" || typeof(eta) != "number"){
+} else if ( isNaN(km) || isNaN(eta) ){
     alert('Si prega di ricaricare la pagina e reinserire le informazioni richieste come numeri');
 }
