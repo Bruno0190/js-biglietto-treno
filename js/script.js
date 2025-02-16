@@ -8,12 +8,11 @@
 //  Bonus:
 // Controllare che gli input di utenti siano numeri
 
-
+// Per prima cosa decido di dare il formato number alle informazioni da inserire
 const km  = parseInt((prompt('Buongiorno, quanti km deve coprire?:')));
-console.log(km);
-
 const eta = parseInt((prompt('Pregasi specificare età:')));
 
+// Essendo NaN anche di formato number, se l'utente ha inserito prima input che non siano scritti come numero il risultato sarà NaN e su questo baso il mio ragionamento condizionale
 if ( !isNaN(km) && !isNaN(eta) ) {
 
     const initialPrice = km * 0.21;
