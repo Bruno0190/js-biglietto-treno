@@ -17,7 +17,7 @@ if ( !isNaN(km) && !isNaN(eta) ) {
 
     const initialPrice = km * 0.21;
     let sconto;
-
+    
     if (eta < 18){
         sconto = (initialPrice*20)/100;
     } else if (eta > 65){
